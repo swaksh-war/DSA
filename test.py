@@ -18,4 +18,4 @@ b = [4,5,6]
 a.extend(b)
 print(a)
 a.clear()
-print(a)
+print(a) 
