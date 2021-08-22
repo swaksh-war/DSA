@@ -2,7 +2,6 @@ class Stack:
     def __init__(self, data):
         self.data = data
     
-    
     def push(self, data):
         self.data.insert(0,data)
     
@@ -15,7 +14,5 @@ class Stack:
     def __len__(self):
         return len(self.data)
     
-    
     def __str__(self):
         return (''.join('{}\n'.format(i) for i in self.data))
-            

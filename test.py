@@ -1,24 +1,16 @@
-<<<<<<< HEAD
-=======
-from dynamic_arr1 import DynamicArray
+from stack import Stack
+from timer import timer
 
-arr = DynamicArray(['sun', 'mon'])
-arr.append('tues')
-print(arr)
-arr.insertAt('wed',1)
-print(arr)
-print(len(arr))
-arr.pop(0)
-print(arr)
-print(len(arr))
-arr.pop()
-print(arr)
-print(len(arr))
+s = Stack([1,2,3,4])
+def print_():
+    print(s)
+    
+timer(print_)
 
-a = DynamicArray([1,2,3])
-b = [4,5,6]
-a.extend(b)
-print(a)
-a.clear()
-print(a)
->>>>>>> fae9b31e996b9b3d444a7b7efc46cf8d752e7b29
+from Queue import queue
+
+q = queue([1,2,3,4])
+q.enqueue("a")
+print(q.head())
+print(q.tail())
+print(q)
