@@ -1,6 +1,6 @@
 from QuickSort import quick_sort
 class Priorityqueue:
-    def __init__(self,data=None):
+    def __init__(self,data):
         self.data = data
         self.len = len(self.data)
     
@@ -34,6 +34,6 @@ class Priorityqueue:
         if elem not in self.data:
             self.data.append(elem)
         quick_sort(self.data, 0,  len(self.data)-1)
-        
+        print(self.data)
         return self.data.index(elem)
     
