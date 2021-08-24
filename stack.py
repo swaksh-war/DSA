@@ -15,4 +15,4 @@ class Stack:
         return len(self.data)
     
     def __str__(self):
-        return (''.join('{}\n'.format(i) for i in self.data))
+        return (''.join('{}\n'.format(i) for i in self.data)) 
