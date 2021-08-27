@@ -9,6 +9,11 @@ class Stack:
     def pop(self):
         return self.data.pop(0)
     
+    def isEmpty(self):
+        if self.data ==None:
+            return True
+        else:
+            return False
     
     def __len__(self):
         return len(self.data)
