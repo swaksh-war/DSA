@@ -1,6 +1,7 @@
 class Stack:
     def __init__(self, data):
         self.data = data
+        self.top = self.data[0]
     
     def push(self, data):
         self.data.insert(0,data)
@@ -8,8 +9,6 @@ class Stack:
     def pop(self):
         return self.data.pop(0)
     
-    def top(self):
-        return self.data[0]
     
     def __len__(self):
         return len(self.data)
